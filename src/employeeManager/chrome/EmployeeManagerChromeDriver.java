@@ -27,7 +27,7 @@ public abstract class EmployeeManagerChromeDriver extends EmployeeManagerBase {
     @BeforeClass
     public static void beforeClass2() throws IOException {
         service = new ChromeDriverService.Builder()
-                .usingChromeDriverExecutable(new File("C:\\appli\\chromedriver_win_20.0.1133.0\\chromedriver.exe")).usingAnyFreePort().build();
+                .usingDriverExecutable(new File("C:\\appli\\chromedriver_win_20.0.1133.0\\chromedriver.exe")).usingAnyFreePort().build();
         service.start();
     }
 
